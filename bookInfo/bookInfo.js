@@ -72,6 +72,9 @@ $(function (){
 
     $("#add-btn").click(function(){
         var urlStr = "";
+        var book_name;
+        book_name = $("#book-name").text();
+        //alert(book_name);
         var identity_code;
         identity_code = $("#identity").attr("data-identity-code");
         var add_book = {
