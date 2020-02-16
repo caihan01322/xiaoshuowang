@@ -3,10 +3,6 @@
 <br />
 <br />
 <br />
-&emsp;&emsp;项目基本要求大体完成。
-<br />
-<br />
-<br />
 &emsp;&emsp;**bookShelf**：实现分页（使用bootstrap-paginator插件），实现不用弹窗修改信息
 <br />
 &emsp;&emsp;**index**：实现轮播图（该部分**并未**使用bootstrap插件）
