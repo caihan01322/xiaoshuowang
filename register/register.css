@@ -1,0 +1,50 @@
+* {
+    margin:0;
+    padding:0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eff4f7;
+}
+.container-fluid{
+    width: 320px;
+    margin-top: 200px;
+}
+#register {
+    margin-top: 3px;
+}
+#check {
+    width: 15px;
+    height: 15px;
+}
+.alert {
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 0;
+}
+.error {
+    border: 1px solid #FF3955;
+}
+.button {
+    width: 320px;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    border: 0 none;
+    border-radius: 4px;
+    background-color: #FF9A14;
+}
+/* .button :hover {
+    background-color: #CC7B10;
+} */
+@font-face {
+    font-family: 'iconfont';  /* project id 1621483 */
+    src: url('https://at.alicdn.com/t/font_1621483_ynaf1kqphlk.eot');
+    src: url('https://at.alicdn.com/t/font_1621483_ynaf1kqphlk.eot?#iefix') format('embedded-opentype'),
+    url('https://at.alicdn.com/t/font_1621483_ynaf1kqphlk.woff2') format('woff2'),
+    url('https://at.alicdn.com/t/font_1621483_ynaf1kqphlk.woff') format('woff'),
+    url('https://at.alicdn.com/t/font_1621483_ynaf1kqphlk.ttf') format('truetype'),
+    url('https://at.alicdn.com/t/font_1621483_ynaf1kqphlk.svg#iconfont') format('svg');
+}
