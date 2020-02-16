@@ -1,0 +1,281 @@
+* {
+    margin:0;
+    padding:0;
+}
+body{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+h3{
+    border-bottom: 1px solid #666;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+}
+a:hover{
+    text-decoration: none;
+}
+#search{
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 7px;
+}
+.input-medium{
+    width: 200px;
+    height: 30px;
+}
+#findBtn{
+    margin-left: 10px;
+}
+#worksClass:hover{
+    transition: 0.3s;
+}
+#iCenter:hover{
+    transition: 0.3s;
+}
+#notice{
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: cursive;
+    text-indent: 2em;/*首行缩进2字符*/
+}
+#hot-info>li>a{
+    color: black;
+}
+#hot-info>li>a:hover{
+    color: #23527c;
+}
+#hot-info li{
+    width: 195px;
+    height: 20px;
+    margin: 15px auto;
+    text-overflow :ellipsis; /*clip直接截断*/
+    white-space :nowrap;     /*文字不换行*/
+    overflow : hidden;       /*隐藏超出部分*/
+    text-align: left;
+}
+#rank li{
+    display: inline-block;
+    width: 210px;
+    height: 30px;
+}
+.num-box,.name-box{
+    display: inline-block;
+}
+.num-box{
+    width: 30px;
+    height: 30px;
+    float: left;
+}
+.num-box span{
+    display: block;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;/*文字垂直居中*/
+    text-align: center;
+    color: #666;
+    background: #ededed;
+    margin: 6px auto;
+}
+#num1{
+    color: #fff;
+    background: #bf2c24;
+}
+#num2{
+    color: #fff;
+    background: #e67225;
+}
+#num3{
+    color: #fff;
+    background: #e6bf25;
+}
+.name-box{
+    width: 150px;
+    height: 30px;
+    border-bottom: 1px solid #e6e6e6;
+    text-overflow :ellipsis; /*clip直接截断*/
+    white-space :nowrap;     /*文字不换行*/
+    overflow : hidden;       /*隐藏超出部分*/
+    line-height: 30px;
+    float: left;
+    text-align: left;
+}
+.name{
+    color: black;
+    cursor: pointer;
+}
+.total-box{
+    float: left;
+    width: 30px;
+    height: 30px;
+    border-bottom: 1px solid #e6e6e6;
+    line-height: 30px;/*文字垂直居中*/
+    text-overflow :ellipsis; /*clip直接截断*/
+    white-space :nowrap;     /*文字不换行*/
+    overflow : hidden;       /*隐藏超出部分*/
+    color: #b3b3b3;
+    text-align: left;
+}
+#recommend-box{
+    display: flex;
+    justify-content: space-between;
+}
+#book-img{
+    width: 50%;
+    height: 350px;
+}
+#book-img img{
+    display: block;
+    width: 75%;
+    height: 300px;
+    margin: 25px auto;
+}
+#book-info{
+    width: 50%;
+    height: 350px;
+}
+#book-info h3{
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    border-bottom: 0px;
+    margin-top: 60px;
+    text-align: center;
+    display: block;
+    width: 100%;
+    height: 30px;
+    text-overflow :ellipsis; /*clip直接截断*/
+    white-space :nowrap;     /*文字不换行*/
+    overflow : hidden;       /*隐藏超出部分*/
+}
+#book-info>h3>a{
+    color: black;
+}
+#book-info>h3>a:hover {
+    color: #ed4259;
+}
+#book-info p{
+    margin-top: 50px;
+    text-indent: 2em;/*首行缩进2字符*/
+}
+.read-btn{
+    display: block;
+    width: 100px;
+    height: 30px;/*文字垂直居中*/
+    line-height: 30px;
+    margin: 50px auto 0 auto;
+    text-align: center;
+    color: #fff;
+    border: 1px solid #bf2c24;
+    border-radius: 15px;
+    background: #bf2c24;
+}
+.read-btn:hover{
+    color: #fff;
+    border: 1px solid #ed4259;
+    background: #ed4259;
+}
+#classes{
+    width: 75%;
+    height: 350px;
+    margin: 15px auto;
+}
+#classes>table{
+    height: 320px;
+}
+td{
+    width: 50%;
+    height: 80px;
+    border: 1px solid #e6e6e6;
+    text-align: center;
+    font-size: 16px;
+}
+td>a{
+    color: black;
+}
+td:hover{
+    width: 50%;
+    height: 80px;
+    color: red;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: pink;
+}
+td>a:hover{
+    color: red;
+}
+.tr-odd{
+    background: #f7f6f2;
+}
+.tr-even{
+    background: #fcfcfa;
+}
+/* 轮播图布局
+------------------------------------------------------ */
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+.carousel-wrapper{
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: 350px;
+}
+.carousel-images-wrapper{
+    width: 100%;
+    height: 350px;
+}
+.carousel-images img{
+    width: 100%;
+    height: 350px;
+}
+.carousel-images ul{
+    overflow: hidden;
+}
+.carousel-bottom{
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+    width: 135px;
+    height: 25px;
+}
+.carousel-circle-buttons{
+    width: 140px;
+    height: 25px;
+}
+.carousel-circle-buttons li{
+    float: left;
+    width: 25px;
+    height: 25px;
+    margin: 0 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #abc;
+}
+.carousel-circle-buttons li.carousel-current{
+    background-color: pink;
+}
+.carousel-buttons span{
+    position: absolute;
+    width: 30px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    top: 145px;
+    opacity: 0.3;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    font-family: Simsun;
+}
+#carousel-left{
+    left: 10px;
+}
+#carousel-right{
+    right: 10px;
+}
+/* --------------------------------------------------- */
