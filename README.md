@@ -7,4 +7,4 @@
 <br />
 &emsp;&emsp;**index**：实现轮播图
 <br />
-&emsp;&emsp;**regisert**：实现免密登入
+&emsp;&emsp;**register**：实现免密登入
