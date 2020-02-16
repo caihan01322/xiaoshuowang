@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>信息修改</title>
+    <link href="https://cdn.bootcss.com/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="ownInfo.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">小说网</a>
+                    </div>
+                    <div>
+                        <ul class="nav navbar-nav">
+                            <li class="active">
+                                <a href="/index">主页</a>
+                            </li>
+                            <li>
+                                <a href="/allWorks">全部作品</a>
+                            </li>
+                        </ul>
+                        <form class="form-search" id="search">
+                            <input class="input-medium search-query" type="text" placeholder="请输入要查找的书籍" />
+                            <button class="btn" id="findBtn" type="submit">搜索</button>
+                        </form>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li id="welcome">
+                                <a href="javascript:;">欢迎您，<span id="login-name">李宇琨</span>（<span id="identity">读者</span>）</a>
+                            </li>
+                            <li id="login">
+                                <a href="/login"><span class="glyphicon glyphicon-log-in"></span>&nbsp;登录</a>
+                            </li>
+                            <li id="register">
+                                <a href="/register"><span class="glyphicon glyphicon-user"></span>&nbsp;注册</a>
+                            </li>
+                            <li id="exit">
+                                <a href="/login"><span class="glyphicon glyphicon-log-out"></span>&nbsp;退出</a>
+                            </li>
+                            <li class="divider-vertical">
+                            </li>
+                            <li class="dropdown" id="iCenter">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                    个人中心&nbsp;<b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="/bookShelf">书架管理</a>
+                                    </li>
+                                    <li>
+                                        <a href="/basicInfo">基本信息</a>
+                                    </li>
+                                    <li>
+                                        <a href="/ownInfo">信息修改</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>    
+                </div>
+            </nav>
+        </div>
+        <div class="row">
+            <ul class="nav nav-tabs">
+                <li>
+                    <a href="/bookShelf">书架管理</a>
+                </li>
+                <li>
+                    <a href="/basicInfo">基本信息</a>
+                </li>
+                <li class="active">
+                    <a href="/ownInfo">信息修改</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script><!--放在第一个-->
+    <script src="https://cdn.bootcss.com/sweetalert/1.1.3/sweetalert.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/sweetalert/1.1.3/sweetalert.min.css"/>
+    <script src="ownInfo.js"></script>
+</body>
+</html>
