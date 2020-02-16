@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>小说网</title>
+    <link href="https://cdn.bootcss.com/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="index.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">小说网</a>
+                    </div>
+                    <div>
+                        <ul class="nav navbar-nav">
+                            <li class="active">
+                                <a href="/index">主页</a>
+                            </li>
+                            <li>
+                                <a href="/allWorks">全部作品</a>
+                            </li>
+                        </ul>
+                        <form class="form-search" id="search">
+                            <input class="input-medium search-query" type="text" placeholder="请输入要查找的书籍" />
+                            <button class="btn" id="findBtn" type="submit">搜索</button>
+                        </form>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li id="welcome">
+                                <a href="javascript:;">欢迎您，<span id="login-name">李宇琨</span>（<span id="identity">读者</span>）</a>
+                            </li>
+                            <li id="login">
+                                <a href="/login"><span class="glyphicon glyphicon-log-in"></span>&nbsp;登录</a>
+                            </li>
+                            <li id="register">
+                                <a href="/register"><span class="glyphicon glyphicon-user"></span>&nbsp;注册</a>
+                            </li>
+                            <li id="exit">
+                                <a href="/login"><span class="glyphicon glyphicon-log-out"></span>&nbsp;退出</a>
+                            </li>
+                            <li class="divider-vertical">
+                            </li>
+                            <li class="dropdown" id="iCenter">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                    个人中心&nbsp;<b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="/bookShelf">书架管理</a>
+                                    </li>
+                                    <li>
+                                        <a href="/basicInfo">基本信息</a>
+                                    </li>
+                                    <li>
+                                        <a href="/ownInfo">信息修改</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>    
+                </div>
+            </nav>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <h3 class="text-center">
+                    热门资讯
+                </h3>
+                <ul class="list-unstyled" id="hot-info" align="center">
+                    <li>
+                        <a href="" target="_blank">[公告] 资讯新资讯新闻资</a><!--Beego渲染-->
+                    </li>
+                    <li>
+                        <a href="" target="_blank">[资讯] 讯新资讯新闻资讯新闻资</a><!--Beego渲染-->
+                    </li>
+                    <li>
+                        <a href="" target="_blank">[正文] 新资讯新闻资讯新闻资讯</a><!--Beego渲染-->
+                    </li>
+                    <li>
+                        <a href="" target="_blank">[活动] 新资讯新闻资讯新闻资讯</a><!--Beego渲染-->
+                    </li>
+                </ul>
+                <h3 class="text-center">
+                    通知
+                </h3>
+                <p id="notice">
+                新资讯新闻资讯新闻资讯新资讯新闻资讯新闻资讯新资讯新闻资讯新闻资讯新资讯新闻资讯新闻资讯新资讯新闻资讯新闻资
+                </p><!--Beego渲染，51-54字-->
+            </div>
+            <div class="col-md-6">
+                <div class="carousel-wrapper">
+                    <div class="carousel-images">
+                        <ul class="carousel-images-wrapper">
+                            <li class="chief-recommend-item" id="carousel-img">
+                                <a href="" target="_blank"><img src="/img/1.jpg" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank"><img src="/img/2.jpg" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank"><img src="/img/3.jpg" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="carousel-bottom">
+                        <ul class='carousel-circle-buttons'>
+                            <li class="carousel-current"></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="carousel-buttons">
+                        <span id="carousel-left">&lt;</span>
+                        <span id="carousel-right">&gt;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h3 class="text-center">
+                    个人信息
+                </h3>
+                <ul class="list-unstyled" id="my-info">
+                    <li>用户昵称：
+                        <span>书友书友书友书友书友</span><!--登录后Beego渲染，10字及以下-->
+                    </li>
+                    <br />
+                    <li>用户ID：
+                        <span>2249618917</span><!--登录后Beego渲染，比昵称短-->
+                    </li>
+                    <br />
+                    <li>
+                        注册邮箱：
+                        <span>2249618917@qq.com</span><!--登录后Beego渲染-->
+                    </li>
+                    <br />
+                    <li>
+                        个人签名：
+                        <span>人生能有几回搏人生能有几回搏人生能有几回搏人生能有</span><!--登录后Beego渲染，15-25字-->
+                    </li>
+                    <br />
+                    <li>
+                        出生年月：
+                        <span>1999年9月25日</span><!--登录后Beego渲染-->
+                    </li>
+                    <br />
+                    <li>
+                        上次登录：
+                        <span>2020-01-20 21:25:42</span><!--登录后Beego渲染-->
+                    </li>
+                    <br />
+                    <li>
+                        藏书量：
+                        共<span>1000</span>本，<!--登录后Beego渲染-->
+                        已用<span>1000</span>本 <!--登录后Beego渲染-->
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <h3 class="text-center">
+                    阅读指数榜
+                </h3>
+                <ul id="rank" align="center">
+                    <li>
+                        <div class="num-box">
+                            <span id="num1">1</span> 
+                        </div>
+                        <div class="name-box">
+                            <a class="name" href="" target="_blank">新资讯新闻资讯新闻资讯</a><!--Beego渲染-->
+                        </div>
+                        <div class="total-box">
+                            <span>234</span><!--Beego渲染-->
+                        </div>
+                    </li>
+                    <li>
+                        <div class="num-box">
+                            <span id="num2">2</span> 
+                        </div>
+                        <div class="name-box">
+                            <a class="name" href="" target="_blank">新资讯新闻资讯新闻资讯</a><!--Beego渲染-->
+                        </div>
+                        <div class="total-box">
+                            <span>233</span><!--Beego渲染-->
+                        </div>
+                    </li>
+                    <li>
+                        <div class="num-box">
+                            <span id="num3">3</span>
+                        </div>
+                        <div class="name-box">
+                            <a class="name" href="" target="_blank">新资讯</a><!--Beego渲染-->
+                        </div>
+                        <div class="total-box">
+                            <span>232</span><!--Beego渲染-->
+                        </div>
+                    </li>
+                    <li>
+                        <div class="num-box">
+                            <span>4</span> 
+                        </div>
+                        <div class="name-box">
+                            <a class="name" href="" target="_blank">新资讯新闻资讯新闻资讯</a><!--Beego渲染-->
+                        </div>
+                        <div class="total-box">
+                            <span>231</span><!--Beego渲染-->
+                        </div>
+                    </li>
+                    <li>
+                        <div class="num-box">
+                            <span>5</span> 
+                        </div>
+                        <div class="name-box">
+                            <a class="name" href="" target="_blank">新资讯新闻资讯新闻资讯</a><!--Beego渲染-->
+                        </div>
+                        <div class="total-box">
+                            <span>230</span><!--Beego渲染-->
+                        </div>
+                    </li>
+                    <li>
+                        <div class="num-box">
+                            <span>6</span> 
+                        </div>
+                        <div class="name-box">
+                            <a class="name" href="" target="_blank">新资讯新闻资讯新闻资讯</a><!--Beego渲染-->
+                        </div>
+                        <div class="total-box">
+                            <span>229</span><!--Beego渲染-->
+                        </div>
+                    </li>
+                    <li>
+                        <div class="num-box">
+                            <span>7</span> 
+                        </div>
+                        <div class="name-box">
+                            <a class="name" href="" target="_blank">新资讯新闻资讯新闻资讯</a><!--Beego渲染-->
+                        </div>
+                        <div class="total-box">
+                            <span>228</span><!--Beego渲染-->
+                        </div>
+                    </li>
+                    <li>
+                        <div class="num-box">
+                            <span>8</span> 
+                        </div>
+                        <div class="name-box">
+                            <a class="name" href="" target="_blank">新资讯新闻资讯新闻资讯</a><!--Beego渲染-->
+                        </div>
+                        <div class="total-box">
+                            <span>227</span><!--Beego渲染-->
+                        </div>
+                    </li>
+                    <li>
+                        <div class="num-box">
+                            <span>9</span> 
+                        </div>
+                        <div class="name-box">
+                            <a class="name" href="" target="_blank">新资讯新闻资讯新闻资讯</a><!--Beego渲染-->
+                        </div>
+                        <div class="total-box">
+                            <span>226</span><!--Beego渲染-->
+                        </div>
+                    </li>
+                    <li>
+                        <div class="num-box">
+                            <span>10</span> 
+                        </div>
+                        <div class="name-box">
+                            <a class="name" href="" target="_blank">新资讯新闻资讯新闻资讯</a><!--Beego渲染-->
+                        </div>
+                        <div class="total-box">
+                            <span>15</span><!--Beego渲染-->
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h3 class="text-center">
+                    新作推荐
+                </h3>
+                <div id="recommend-box">
+                    <div id="book-img">
+                        <a href="">
+                            <img src="/img/3.jpg" alt="" target="_blank" />
+                        </a>
+                    </div>
+                    <div id="book-info">
+                        <h3>
+                            <a href="" target="_blank">新资讯新闻新资讯</a><!--Beego渲染-->
+                        </h3>
+                        <p>
+                            新资讯新闻资讯新闻资讯新资讯新闻资讯新闻资讯新资讯新闻资讯新闻资讯新资讯新闻资讯新闻资讯新资讯新闻资讯新闻资讯新闻资讯新闻资
+                        </p><!--Beego渲染，30-60字-->
+                        <a class="read-btn" href="" target="_blank">书籍详情</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h3 class="text-center">
+                    书籍分类
+                </h3>
+                <table id="classes">
+                    <tbody>
+                        <tr class="tr-odd">
+                            <td>
+                                <a href="">玄幻</a>
+                            </td>
+                            <td>
+                                <a href="">武侠</a>
+                            </td>
+                        </tr>
+                        <tr class="tr-even">
+                            <td>
+                                <a href="">都市</a>
+                            </td>
+                            <td>
+                                <a href="">历史</a>
+                            </td>
+                        </tr>
+                        <tr class="tr-odd">
+                            <td>
+                                <a href="">游戏</a>
+                            </td>
+                            <td>
+                                <a href="">悬疑</a>
+                            </td>
+                        </tr>
+                        <tr class="tr-even">
+                            <td>
+                                <a href="">言情</a>
+                            </td>
+                            <td>
+                                <a href="">其他</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <p class="text-center">
+                Copyright © 221801322 &amp; 221801329 All Rights Reserved.
+            </p>
+        </div>
+    </div>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script><!--放在第一个-->
+    <script src="https://cdn.bootcss.com/sweetalert/1.1.3/sweetalert.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/sweetalert/1.1.3/sweetalert.min.css"/>
+    <script src="index.js"></script>
+</body>
+</html>
