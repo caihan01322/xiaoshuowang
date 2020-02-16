@@ -3,6 +3,10 @@
 <br />
 <br />
 <br />
+&emsp;&emsp;项目基本要求大体完成。
+<br />
+<br />
+<br />
 &emsp;&emsp;**bookShelf**：实现分页，实现不用弹窗修改信息
 <br />
 &emsp;&emsp;**index**：实现轮播图
