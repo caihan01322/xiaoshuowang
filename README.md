@@ -9,6 +9,6 @@
 <br />
 &emsp;&emsp;**bookShelf**：实现分页（使用bootstrap-paginator插件），实现不用弹窗修改信息
 <br />
-&emsp;&emsp;**index**：实现轮播图（该部分未使用bootstrap插件）
+&emsp;&emsp;**index**：实现轮播图（该部分**并未**使用bootstrap插件）
 <br />
 &emsp;&emsp;**login**：实现免密登入（使用js-cookie插件）
