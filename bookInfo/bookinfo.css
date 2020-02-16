@@ -1,0 +1,91 @@
+* {
+    margin:0;
+    padding:0;
+}
+body{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+#search{
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 7px;
+}
+.input-medium{
+    width: 200px;
+    height: 30px;
+}
+#findBtn{
+    margin-left: 10px;
+}
+#iCenter :hover{
+    transition: 0.3s;
+}
+#recommend-box{
+    display: flex;
+    justify-content: space-between;
+}
+#book-img{
+    width: 50%;
+    height: 350px;
+}
+#book-img img{
+    display: block;
+    width: 75%;
+    height: 300px;
+    margin: 25px auto;
+}
+#book-info{
+    width: 50%;
+    height: 350px;
+}
+#book-info h3{
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    border-bottom: 0px;
+    margin-top: 60px;
+    text-align: center;
+    display: block;
+    width: 100%;
+    height: 30px;
+    text-overflow :ellipsis; /*clip直接截断*/
+    white-space :nowrap;     /*文字不换行*/
+    overflow : hidden;       /*隐藏超出部分*/
+}
+#book-info>h3>a{
+    color: black;
+}
+#book-info>h3>a:hover {
+    color: #ed4259;
+}
+#book-info p{
+    margin-top: 50px;
+    text-indent: 2em;/*首行缩进2字符*/
+}
+#book-btn{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+#add-btn,#read-btn{
+    width:50%;
+}
+#add-btn>a,#read-btn>a{
+    display: block;
+    width: 100px;
+    height: 30px;/*文字垂直居中*/
+    line-height: 30px;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    border: 1px solid #bf2c24;
+    border-radius: 15px;
+    background: #bf2c24;
+}
+#add-btn>a:hover,#read-btn>a:hover{
+    cursor: pointer;
+    color: #fff;
+    border: 1px solid #ed4259;
+    background: #ed4259;
+}
