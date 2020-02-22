@@ -3,6 +3,8 @@
 <br />
 <br />
 <br />
+&emsp;&emsp;之前不小心把实现轮播图的js部分的代码删了，交的时候也没发现，现在才发现。。。现已补上
+<br />
 &emsp;&emsp;**bookShelf**：实现分页（使用bootstrap-paginator插件），实现不用弹窗修改信息
 <br />
 &emsp;&emsp;**index**：实现轮播图（该部分**并未**使用bootstrap插件）
