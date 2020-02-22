@@ -1,3 +1,10 @@
+function Change() {
+    var curIndex = $(".carousel-circle-buttons li").index($(".carousel-current"));
+    var index;
+    index = (curIndex+1)%3;
+    $(".carousel-images-wrapper li").eq(index).stop().fadeIn("fast").siblings().stop().fadeOut();
+    $(".carousel-circle-buttons li").eq(index).addClass("carousel-current").siblings().removeClass("carousel-current");
+}//轮播图右选择
 function PostHandle(url,data,callback) {
     $.ajax({
         async: false,//同步请求，在没有返回值之前，同步请求将锁住浏览器，ajax后的操作必须等待success的函数完成才可以执行。
@@ -29,6 +36,19 @@ $(function (){
           + ' Please switch to more recent versions of Microsoft Edge, Google Chrome, or Firefox.'
         );
     }
+    
+    $(".carousel-circle-buttons li").click(function () {
+        $(".carousel-images-wrapper li").eq($(this).index()).stop().fadeIn("fast").siblings().stop().fadeOut();
+        $(this).addClass("carousel-current").siblings().removeClass("carousel-current");
+    });//轮播图片选择
+    $("#carousel-left").click(function () {
+        var curIndex = $(".carousel-circle-buttons li").index($(".carousel-current"));
+        var index = (curIndex-1+3)%3;
+        $(".carousel-images-wrapper li").eq(index).stop().fadeIn("fast").siblings().stop().fadeOut();
+        $(".carousel-circle-buttons li").eq(index).addClass("carousel-current").siblings().removeClass("carousel-current");
+    });//轮播图左选择
+    $("#carousel-right").click(Change);//轮播图右选择
+    setInterval(Change,5000);//轮播图自动播放
 
     PostHandle("/index", {isLogin:"unKnow"}, function(data){
         if(data.status == 0){
